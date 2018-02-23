@@ -16,7 +16,7 @@ local_file = open('local_copy.log')
 
 whole_list = []
 for i in local_file:
-  a = local_file.readline()
-  whole_list.append(a)
+  whole_list.append(i)
+  #Puts each line of file as seperate character in a list
 
-# Find out how not to skip every other line
+
