@@ -12,6 +12,8 @@ local_file, headers = urlretrieve(URL_PATH, LOCAL_FILE, lambda x,y,z: print('.',
 # Alt. 2: a progress bar with reduced output (every 1000 blocks)
 local_file, headers = urlretrieve(URL_PATH, LOCAL_FILE, lambda x,y,z: print('.', end='', flush=True) if x % 100 == 0 else False)
 
+local_file = open('local_copy.log')
+
 whole_list = []
 for i in local_file:
   a = local_file.readline()
