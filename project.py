@@ -19,4 +19,7 @@ for i in local_file:
   whole_list.append(i)
   #Puts each line of file as seperate character in a list
 
-
+x = 0
+for i in whole_list:
+  x = x + 1
+  # Counts every line in list giving total request count
