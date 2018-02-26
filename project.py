@@ -16,7 +16,10 @@ local_file = open('local_copy.log')
 
 whole_list = []
 for i in local_file:
-  a = local_file.readline()
-  whole_list.append(a)
+  whole_list.append(i)
+  #Puts each line of file as seperate character in a list
 
-# Find out how not to skip every other line
+x = 0
+for i in whole_list:
+  x = x + 1
+  # Counts every line in list giving total request count
