@@ -23,3 +23,41 @@ x = 0
 for i in whole_list:
   x = x + 1
   # Counts every line in list giving total request count
+
+File = []
+Code = []
+x = 0
+for i in whole_list:
+    whole_split = whole_list[x].split(' ')
+    if len(whole_split) > 9:
+        File.append(whole_split[6])
+        Code.append(whole_split[8])
+    x = x + 1
+
+ 
+
+word_counter = {}
+for word in File:
+    if word in word_counter:
+        word_counter[word] += 1
+    else:
+        word_counter[word] = 1
+
+#print(word_counter)
+popular_words = sorted(word_counter, key = word_counter.get, reverse = True)
+top_3 = popular_words[:3]
+print(top_3)
+
+code_counter = {}
+for code in Code:
+    if code in code_counter:
+        code_counter[code] += 1
+    else:
+        code_counter[code] = 1
+
+#print(code_counter)
+popular_code = sorted(code_counter, key = code_counter.get, reverse = True)
+top = popular_code[:3]
+print(top)
+
+ 
