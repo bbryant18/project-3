@@ -109,51 +109,51 @@ for i in correct_list:
         # This is supposed to create a new file for each month
         if month == 1:
             newfile = open("Oct.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1])))
+            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1]))
             newfile.close
         elif month == 2:
             newfile = open("Nov.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1])))
+            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1]))
             newfile.close
         elif month == 3:
             newfile = open("Dec.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1])))
+            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1]))
             newfile.close
         elif month == 4:
             newfile = open("Jan.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1])))
+            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1]))
             newfile.close
         elif month == 5:
             newfile = open("Feb.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1])))
+            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1]))
             newfile.close
         elif month == 6:
             newfile = open("Mar.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1])))
+            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1]))
             newfile.close
         elif month == 7:
             newfile = open("Apr.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1])))
+            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1]))
             newfile.close
         elif month == 8:
             newfile = open("May.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1])))
+            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1]))
             newfile.close
         elif month == 9:
             newfile = open("Jun.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1])))
+            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1]))
             newfile.close
         elif month == 10:
             newfile = open("Jul.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1])))
+            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1]))
             newfile.close
         elif month == 11:
             newfile = open("Aug.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1])))
+            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1]))
             newfile.close
         elif month == 12:
             newfile = open("Sep.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1])))
+            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % sum(first[:1] + second[:1] + third[:1] + fourth[:1] + fifth[:1] + sixth[:1]))
             newfile.close
         month += 1
         if week == 4:
