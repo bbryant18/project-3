@@ -7,10 +7,10 @@ LOCAL_FILE = 'local_copy.log'
 local_file, headers = urlretrieve(URL_PATH, LOCAL_FILE)
 
 # Alt.: supply an anonmymous callback function to print a simple progress bar to screen
-# local_file, headers = urlretrieve(URL_PATH, LOCAL_FILE, lambda x,y,z: print('.', end='', flush=True))
+local_file, headers = urlretrieve(URL_PATH, LOCAL_FILE, lambda x,y,z: print('.', end='', flush=True))
 
 # Alt. 2: a progress bar with reduced output (every 1000 blocks)
-# local_file, headers = urlretrieve(URL_PATH, LOCAL_FILE, lambda x,y,z: print('.', end='', flush=True) if x % 100 == 0 else False)
+local_file, headers = urlretrieve(URL_PATH, LOCAL_FILE, lambda x,y,z: print('.', end='', flush=True) if x % 100 == 0 else False)
 
 # Open desired file to read and make code for
 local_file = open('local_copy.log')
