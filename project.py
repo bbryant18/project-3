@@ -30,8 +30,6 @@ for i in local_file:
         correct_list.append(i)
         correct += 1
 percent_of_errors = ((error/correct)*100)
-print("1.   Number of correct requests in log file = ", correct)
-print("     Percent of errors removed in log file = ", percent_of_errors )
 
 # Determine how many requests were made per day, per week, and per month
 mon = 0
@@ -211,6 +209,51 @@ for i in correct_list:
     Code.append(whole_split[8])
     a = a + 1
 
+
+
+# Finds number of 3xx and 4xx Status Codes in log
+status_code = 0
+status_4xx = 0
+status_3xx = 0
+for code in Code:
+    if int(code) in range(400,499):
+        status_4xx += 1
+    elif int(code) in range(300,399):
+        status_3xx += 1
+    else:
+        status_code += 1
+
+#print("\nStatus 3xx = ", status_3xx)
+#print("Status 4xx = ", status_4xx)
+percent_of_4xx = ((status_4xx/(status_3xx+status_code))*100)
+percent_of_3xx = ((status_3xx/(status_4xx+status_code))*100)
+
+
+# Puts file name(key) and number of times that file name is called(value) into a dictionary
+word_counter = {}
+for word in File:
+    if word in word_counter:
+        word_counter[word] += 1
+    else:
+        word_counter[word] = 1
+
+# Finds and counts files that were only requested once
+File_count = 0
+Least_requested = []
+for key, value in word_counter.items():
+    if value == 1:
+        Least_requested.append(key)
+        File_count += 1
+
+# Finds the most requested file
+popular_words = sorted(word_counter, key = word_counter.get, reverse = True)
+#print(popular_words)
+top_File = popular_words[:1]
+
+    
+print("1.   Number of correct requests in log file = ", correct)
+print("     Percent of errors removed in log file = ", percent_of_errors )
+
 print("\n2.   Average number of requests on Mondays = ", (sum(Mon)/len(Mon)))
 print("     Average number of requests on Tuesdays = ", (sum(Tues)/len(Tues)))
 print("     Average number of requests on Wednsdays = ", (sum(Wed)/len(Wed)))
@@ -237,45 +280,9 @@ print("     Total in October = ", Oct)
 print("     Total in November = ", Nov)
 print("     Total in December = ", Dec)
 
-# Finds number of 3xx and 4xx Status Codes in log
-status_code = 0
-status_4xx = 0
-status_3xx = 0
-for code in Code:
-    if int(code) in range(400,499):
-        status_4xx += 1
-    elif int(code) in range(300,399):
-        status_3xx += 1
-    else:
-        status_code += 1
-
-#print("\nStatus 3xx = ", status_3xx)
-#print("Status 4xx = ", status_4xx)
-percent_of_4xx = ((status_4xx/(status_3xx+status_code))*100)
-percent_of_3xx = ((status_3xx/(status_4xx+status_code))*100)
 print("\n3.   Percent of 4xx status codes = ", percent_of_4xx )
 print("\n4.   Percent of 3xx status codes = ", percent_of_3xx )
 
-# Puts file name(key) and number of times that file name is called(value) into a dictionary
-word_counter = {}
-for word in File:
-    if word in word_counter:
-        word_counter[word] += 1
-    else:
-        word_counter[word] = 1
-
-# Finds and counts files that were only requested once
-File_count = 0
-Least_requested = []
-for key, value in word_counter.items():
-    if value == 1:
-        Least_requested.append(key)
-        File_count += 1
-
-# Finds the most requested file
-popular_words = sorted(word_counter, key = word_counter.get, reverse = True)
-#print(popular_words)
-top_File = popular_words[:1]
 print("\n5.   The most requested file is: ")
 for i in top_File:
     print("         ",i)
@@ -283,3 +290,5 @@ print("\n6.   There were",File_count,"file(s) requested only once")
 print("     Here are a few of those files:")
 for i in Least_requested[0:5]:
     print("         ",i)
+    
+
