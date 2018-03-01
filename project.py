@@ -142,10 +142,16 @@ for i in correct_list:
             sixth.append(Sixth_Week)
             Sixth_Week = 0
         week += 1
+        
     # Resets months when it gets back to beginning of the year
     z = month % 13
     if z == 0:
         month = 1
+    ############################## NEW CODE PLEASE CHECK ##############################
+    # This is supposed to create a new file for each month
+    newfile = open("month%z.txt","w+")
+    newfile.write("%s\n" % first + "%s\n" % second + "%s\n" % third + "%s\n" % fourth + "%s\n" % fifth + "%s\n" % sixth)
+    newfile.close
     # Increments count of days based on what day of week it is
     if day == 1:
         mon += 1
