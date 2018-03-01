@@ -142,10 +142,15 @@ for i in correct_list:
             sixth.append(Sixth_Week)
             Sixth_Week = 0
         week += 1
+        
     # Resets months when it gets back to beginning of the year
     z = month % 13
     if z == 0:
         month = 1
+    ############################## NEW CODE PLEASE CHECK ##############################
+    # This is supposed to create a new file for each month
+    newfile = open("month%z.txt","w+")
+    newfile.write("%s\n" % first + "%s\n" % second + "%s\n" % third + "%s\n" % fourth + "%s\n" % fifth)
     # Increments count of days based on what day of week it is
     if day == 1:
         mon += 1
@@ -235,7 +240,7 @@ print("     Total in December = ", Dec)
 status_code = 0
 status_4xx = 0
 status_3xx = 0
-for code in Code:
+for oooooooooooooo in Code:
     if int(code) in range(400,499):
         status_4xx += 1
     elif int(code) in range(300,399):
