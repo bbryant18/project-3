@@ -295,7 +295,8 @@ popular_words = sorted(word_counter, key = word_counter.get, reverse = True)
 top_File = popular_words[:1]
 
     
-print("1.   Number of correct requests in log file = ", correct)
+print("1.   Total number of requests in lof file = ", (correct + error)
+print("     Number of correct requests in log file = ", correct)
 print("     Percent of errors removed in log file = %.2f" %percent_of_errors )
 
 print("\n2.   Average number of requests on Mondays = %.2f" %(sum(Mon)/len(Mon)))
