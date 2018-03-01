@@ -149,11 +149,6 @@ for i in correct_list:
     z = month % 13
     if z == 0:
         month = 1
-    ############################## NEW CODE PLEASE CHECK ##############################
-    # This is supposed to create a new file for each month
-    newfile = open("month%z.txt","w+")
-    newfile.write("%s\n" % first + "%s\n" % second + "%s\n" % third + "%s\n" % fourth + "%s\n" % fifth + "%s\n" % sixth)
-    newfile.close
     # Increments count of days based on what day of week it is
     if day == 1:
         mon += 1
