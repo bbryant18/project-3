@@ -107,9 +107,54 @@ for i in correct_list:
     # If month on current line doesn't match with month on previous line increment month and resets month
     if whole_split[3][4:7] != previous_day[3][4:7]:
         # This is supposed to create a new file for each month
-        newfile = open(month,".txt","w+")
-        newfile.write("%s\n" % first + "%s\n" % second + "%s\n" % third + "%s\n" % fourth + "%s\n" % fifth + "%s\n" % sixth)
-        newfile.close
+        if month == 1:
+            newfile = open("Oct.txt","w+")
+            newfile.write("%s\n" % first + "%s\n" % second + "%s\n" % third + "%s\n" % fourth + "%s\n" % fifth + "%s\n" % sixth)
+            newfile.close
+        elif month == 2:
+            newfile = open("Nov.txt","w+")
+            newfile.write("%s\n" % first + "%s\n" % second + "%s\n" % third + "%s\n" % fourth + "%s\n" % fifth + "%s\n" % sixth)
+            newfile.close
+        elif month == 3:
+            newfile = open("Dec.txt","w+")
+            newfile.write("%s\n" % first + "%s\n" % second + "%s\n" % third + "%s\n" % fourth + "%s\n" % fifth + "%s\n" % sixth)
+            newfile.close
+        elif month == 4:
+            newfile = open("Jan.txt","w+")
+            newfile.write("%s\n" % first + "%s\n" % second + "%s\n" % third + "%s\n" % fourth + "%s\n" % fifth + "%s\n" % sixth)
+            newfile.close
+        elif month == 5:
+            newfile = open("Feb.txt","w+")
+            newfile.write("%s\n" % first + "%s\n" % second + "%s\n" % third + "%s\n" % fourth + "%s\n" % fifth + "%s\n" % sixth)
+            newfile.close
+        elif month == 6:
+            newfile = open("Mar.txt","w+")
+            newfile.write("%s\n" % first + "%s\n" % second + "%s\n" % third + "%s\n" % fourth + "%s\n" % fifth + "%s\n" % sixth)
+            newfile.close
+        elif month == 7:
+            newfile = open("Apr.txt","w+")
+            newfile.write("%s\n" % first + "%s\n" % second + "%s\n" % third + "%s\n" % fourth + "%s\n" % fifth + "%s\n" % sixth)
+            newfile.close
+        elif month == 8:
+            newfile = open("May.txt","w+")
+            newfile.write("%s\n" % first + "%s\n" % second + "%s\n" % third + "%s\n" % fourth + "%s\n" % fifth + "%s\n" % sixth)
+            newfile.close
+        elif month == 9:
+            newfile = open("Jun.txt","w+")
+            newfile.write("%s\n" % first + "%s\n" % second + "%s\n" % third + "%s\n" % fourth + "%s\n" % fifth + "%s\n" % sixth)
+            newfile.close
+        elif month == 10:
+            newfile = open("Jul.txt","w+")
+            newfile.write("%s\n" % first + "%s\n" % second + "%s\n" % third + "%s\n" % fourth + "%s\n" % fifth + "%s\n" % sixth)
+            newfile.close
+        elif month == 11:
+            newfile = open("Aug.txt","w+")
+            newfile.write("%s\n" % first + "%s\n" % second + "%s\n" % third + "%s\n" % fourth + "%s\n" % fifth + "%s\n" % sixth)
+            newfile.close
+        elif month == 12:
+            newfile = open("Sep.txt","w+")
+            newfile.write("%s\n" % first + "%s\n" % second + "%s\n" % third + "%s\n" % fourth + "%s\n" % fifth + "%s\n" % sixth)
+            newfile.close
         month += 1
         if week == 4:
             fourth.append(Fourth_Week)
