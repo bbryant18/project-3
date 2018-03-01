@@ -106,6 +106,10 @@ for i in correct_list:
         day += 1
     # If month on current line doesn't match with month on previous line increment month and resets month
     if whole_split[3][4:7] != previous_day[3][4:7]:
+        # This is supposed to create a new file for each month
+        newfile = open(month".txt","w+")
+        newfile.write("%s\n" % first + "%s\n" % second + "%s\n" % third + "%s\n" % fourth + "%s\n" % fifth + "%s\n" % sixth)
+        newfile.close
         month += 1
         if week == 4:
             fourth.append(Fourth_Week)
