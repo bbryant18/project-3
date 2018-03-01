@@ -150,7 +150,8 @@ for i in correct_list:
     ############################## NEW CODE PLEASE CHECK ##############################
     # This is supposed to create a new file for each month
     newfile = open("month%z.txt","w+")
-    newfile.write("%s\n" % first + "%s\n" % second + "%s\n" % third + "%s\n" % fourth + "%s\n" % fifth)
+    newfile.write("%s\n" % first + "%s\n" % second + "%s\n" % third + "%s\n" % fourth + "%s\n" % fifth + "%s\n" % sixth)
+    newfile.close
     # Increments count of days based on what day of week it is
     if day == 1:
         mon += 1
@@ -240,7 +241,7 @@ print("     Total in December = ", Dec)
 status_code = 0
 status_4xx = 0
 status_3xx = 0
-for oooooooooooooo in Code:
+for code in Code:
     if int(code) in range(400,499):
         status_4xx += 1
     elif int(code) in range(300,399):
