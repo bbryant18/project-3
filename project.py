@@ -109,52 +109,76 @@ for i in correct_list:
         # This is supposed to create a new file for each month
         if month == 1:
             newfile = open("Oct.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % Oct)
+            for item in Month:
+                newfile.write("%s\n" % item)
             newfile.close
+            del Month[:]
         elif month == 2:
             newfile = open("Nov.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % Nov)
+            for item in Month:
+                newfile.write("%s\n" % item)
             newfile.close
+            del Month[:]
         elif month == 3:
             newfile = open("Dec.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % Dec)
+            for item in Month:
+                newfile.write("%s\n" % item)
             newfile.close
+            del Month[:]
         elif month == 4:
             newfile = open("Jan.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % Jan)
+            for item in Month:
+                newfile.write("%s\n" % item)
             newfile.close
+            del Month[:]
         elif month == 5:
             newfile = open("Feb.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % Feb)
+            for item in Month:
+                newfile.write("%s\n" % item)
             newfile.close
+            del Month[:]
         elif month == 6:
             newfile = open("Mar.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % Mar)
+            for item in Month:
+                newfile.write("%s\n" % item)
             newfile.close
+            del Month[:]
         elif month == 7:
             newfile = open("Apr.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % Apr)
+            for item in Month:
+                newfile.write("%s\n" % item)
             newfile.close
+            del Month[:]
         elif month == 8:
             newfile = open("May.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % May)
+            for item in Month:
+                newfile.write("%s\n" % item)
             newfile.close
+            del Month[:]
         elif month == 9:
             newfile = open("Jun.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % Jun)
+            for item in Month:
+                newfile.write("%s\n" % item)
             newfile.close
+            del Month[:]
         elif month == 10:
             newfile = open("Jul.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % Jul)
+            for item in Month:
+                newfile.write("%s\n" % item)
             newfile.close
+            del Month[:]
         elif month == 11:
             newfile = open("Aug.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % Aug)
+            for item in Month:
+                newfile.write("%s\n" % item)
             newfile.close
+            del Month[:]
         elif month == 12:
             newfile = open("Sep.txt","w+")
-            newfile.write("First Week = %s\n" % first[:1] + "Second Week = %s\n" % second[:1] + "Third Week = %s\n" % third[:1] + "Fourth Week = %s\n" % fourth[:1] + "Fifth Week = %s\n" % fifth[:1] + "Sixth Week = %s\n" % sixth[:1] + "Total count this month = %s\n" % Sep)
+            for item in Month:
+                newfile.write("%s\n" % item)
             newfile.close
+            del Month[:]
         month += 1
         if week == 4:
             fourth.append(Fourth_Week)
@@ -295,14 +319,14 @@ popular_words = sorted(word_counter, key = word_counter.get, reverse = True)
 top_File = popular_words[:1]
 
     
-print("1.   Total number of requests in lof file = ", (correct + error))
+print("1.   Total number of requests in log file = ", (correct + error))
 print("     Number of correct requests in log file = ", correct)
 print("     Percent of errors removed in log file = %.2f" %percent_of_errors )
 
 print("\n2.   Average number of requests on Mondays = %.2f" %(sum(Mon)/len(Mon)))
 print("     Average number of requests on Tuesdays = %.2f" %(sum(Tues)/len(Tues)))
 print("     Average number of requests on Wednsdays = %.2f" %(sum(Wed)/len(Wed)))
-print("     Average number of requests Thursdays = %.2f" %(sum(Thurs)/len(Thurs)))
+print("     Average number of requests on Thursdays = %.2f" %(sum(Thurs)/len(Thurs)))
 print("     Average number of requests on Fridays = %.2f" %(sum(Fri)/len(Fri)))
 print("     Average number of requests on Saturdays = %.2f" %(sum(Sat)/len(Sat)))
 print("     Average number of requests on Sundays = %.2f" %(sum(Sun)/len(Sun)))
